@@ -1,0 +1,120 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  
+  
+}
+body{
+  background-color:#0095 !important;
+  
+}
+
+.App{
+  border: 2px solid transparent;
+  max-width:550px;
+ 
+  margin: auto;
+  margin-top: 4rem;
+  min-height: 80vh;
+  border-radius: .9rem;
+  background-color: #0095 !important ;
+
+  box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+
+  
+
+  
+}
+.head h1{
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #5e1a1a;
+
+  
+}
+.search{
+  padding:1rem;
+}
+#srch{
+  background-color: darkslateblue;
+}
+.es{
+  border: 2px solid;
+  padding: 10px;
+}
+#tasks{
+  display: grid;
+  grid-template-columns:5% 45% 40% 5%;
+  justify-content: center;
+  text-align: start;
+  align-content: center;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #aab2ff!important ;
+  text-align: start;
+ 
+}
+#tasks h5{
+  font-weight: 700;
+  text-shadow: 0px 1px 1px rgb(231, 215, 215);
+
+  
+}
+#chk{
+   position: relative;
+   right: .9rem;
+   width:1rem;
+   bottom: .3rem;
+   cursor: pointer;
+}
+.del{
+  position: relative;
+  left: .8rem;
+     cursor: pointer;
+   
+}
+.App,#tasks,.search,.head
+{
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.App:before, .App:after
+{
+  content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.App:after
+{
+  right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
