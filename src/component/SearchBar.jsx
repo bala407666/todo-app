@@ -18,9 +18,9 @@ const SearchBar = ({onAdd,term,searchHandler}) => {
 
   return (
     <Stack direction="horizontal" gap={3} className='search'>
-    <Form.Control className="me-auto" type='text'  placeholder="Add your item here..."  ref={inputRef} onChange={adderr}  />
+    <Form.Control className="me-auto" type='text'  placeholder="Add your item here..."  ref={inputRef} onChange={adderr} value={term} />
     
-    <Button variant="secondary"  id='srch'>search</Button>
+    <Button variant="secondary"  id='srch' onClick={adderr} value={term}>search</Button>
     <div className="vr" />
     <Example  onAdd={onAdd}/>
   </Stack>

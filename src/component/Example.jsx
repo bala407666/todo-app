@@ -55,7 +55,7 @@ function Example({ onAdd }) {
               />
               <Form.Label htmlFor='time'>time</Form.Label>
               <Form.Control
-                type='date'
+                type='datetime-local'
                 placeholder=""
                 name='time'
                 value={time}
